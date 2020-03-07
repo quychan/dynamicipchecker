@@ -20,7 +20,7 @@ Mục tiêu cuối cùng là kiểm tra IP máy hiện tại của bạn đang l
 
 Bạn cần phải cài đặt bằng tay các bước hướng dẫn sau:
 
-# Những thứ cần chuẩn bị cho tên miền
+## Những thứ cần chuẩn bị cho tên miền
 
 1. Một tên miền đã trỏ tới CloudFlare
 
@@ -28,7 +28,7 @@ Bạn cần phải cài đặt bằng tay các bước hướng dẫn sau:
 
 3. Tạo một subdomain (A record) và trỏ subdomain đó về một IP bất kỳ
 
-# Những thứ cần chuẩn bị cho máy chủ (Hướng dẫn này chỉ áp dụng cho Linux)
+## Những thứ cần chuẩn bị cho máy chủ (Hướng dẫn này chỉ áp dụng cho Linux)
 
 1. Tự động chạy nếu vô tình bị Reset hoặc Reboot
 
@@ -40,7 +40,7 @@ updating...
 
 Mình khuyến khích các bạn cài đặt vào folder /opt/dynamicipchecker/
 
-# Cấu Hình Mã Nguồn
+## Cấu Hình Mã Nguồn
 
 Vào file /opt/dynamicipchecker/config.php để chỉnh sửa các file sau:
 
@@ -49,3 +49,5 @@ Vào file /opt/dynamicipchecker/config.php để chỉnh sửa các file sau:
 2. $subdomain = 'homeip';
 
 3. $sleepTime = 600; # Thời gian ngủ
+
+4. $cloudFlareToken = '';
